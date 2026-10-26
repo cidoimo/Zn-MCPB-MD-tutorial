@@ -29,8 +29,7 @@ Everything protein-specific is in **`config.sh`**: the same scripts are meant to
 8. [Step 5 – Site monitoring](#8-step-5--site-monitoring)
 9. [A new protein (PA5532)](#9-a-new-protein-pa5532)
 10. [Troubleshooting](#10-troubleshooting)
-11. [Methods text](#11-methods-text)
-12. [References](#12-references)
+11. [References](#12-references)
 
 ---
 
@@ -264,11 +263,7 @@ Things to check by eye for every new protein: LINK lines, QM charge, `BOUND` lig
 | `recv ... Connection reset by peer` at the end of a step | OpenMPI teardown message | harmless if `mdout` ends with timings |
 | `Unit 5 Error on OPEN: xxx.in` | input deleted / wrong path | inputs are in `04_md/input`, run from `04_md/repN` |
 
-## 11. Methods text
-
-> The Zn²⁺ site of PA5535 (Cys71, Cys73, Cys74 and one water molecule) was described with a bonded model built with MCPB.py (AmberTools 22). The AlphaFold 3 model of the closed state was first relaxed with a restrained generalized-Born minimization in which the three Zn–S and the Zn–O(water) distances were restrained to 2.30 and 2.05 Å and all other polar atoms within 8 Å were kept at least 3.4 Å from Zn. Geometry optimization and the analytic Hessian of the small model were computed with ORCA 6.1.1 at the B3LYP/6-31G\* level, and Zn–S bond and angle parameters were derived with the Seminario method. Because the Seminario Zn–O(water) force constant was negligible (0.4 kcal mol⁻¹ Å⁻²), the Zn–O bond was assigned k = 150 kcal mol⁻¹ Å⁻² and r₀ = 2.05 Å, with S–Zn–O and Zn–O–H angles from the MCPB.py empirical scheme, and a flat-bottom Zn–O restraint (1.95–2.20 Å) was applied in all simulations. RESP charges were fitted to the Merz–Kollman electrostatic potential of the large model computed with PySCF at the same level of theory. Protein, water and GTP were described with ff14SB, TIP3P and the Meagher polyphosphate parameters, and Mg²⁺ with the Li–Merz 12-6-4 model. After minimization and NVT/NPT equilibration, dual-boost Gaussian accelerated MD (150 ns: 30 ns of conventional MD, 50 ns of GaMD equilibration and 70 ns of GaMD production, σ₀P = σ₀D = 6.0 kcal mol⁻¹) was run with pmemd.cuda.
-
-## 12. References
+## 11. References
 
 Abramson, J.; Adler, J.; Dunger, J.; et al. Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature* **2024**, *630*, 493–500. DOI: 10.1038/s41586-024-07487-w
 
