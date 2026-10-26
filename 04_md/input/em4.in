@@ -1,8 +1,0 @@
-Minimization 4: no positional restraints
- &cntrl
-  imin=1, maxcyc=5000, ncyc=2500,
-  ntb=1, cut=10.0, lj1264=1,
-  nmropt=1, ntpr=250,
- /
- &wt type='END' /
-DISANG=../input/site_eq.rst
