@@ -1,0 +1,37 @@
+# third-party parameters (download, see README)
+GTP.prep
+frcmod.phos
+# large / generated files
+*.prmtop
+*.inpcrd
+*.rst7
+*.nc
+*.out
+*.log
+*.chk
+*.fchk
+*.gbw
+*.hess
+*.tmp*
+mdcrd.*
+mdout.*
+mdinfo*
+restrt.*
+gamd-restart.dat
+01_prep/*
+!01_prep/run_prep.sh
+02_mcpb/*
+!02_mcpb/run_mcpb.sh
+!02_mcpb/orca/
+02_mcpb/orca/*
+!02_mcpb/orca/*.py
+03_system/*
+!03_system/build_system.sh
+04_md/rep*/
+04_md/*.sh
+!04_md/simulazione.sh
+05_analysis/rep*/
+
+# models (unpublished)
+00_model/*.pdb
+00_model/*.cif

@@ -1,0 +1,15 @@
+# Python environment for the pipeline scripts (parmed) and the Merz-Kollman ESP (pyscf)
+# create:  conda env create -f envs/md-qm.yml
+name: md-qm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - h5py
+  - parmed
+  - openmpi=4.1.8      # same MPI as the ORCA 6.1.1 binaries
+  - pip
+  - pip:
+      - pyscf==2.14.0
