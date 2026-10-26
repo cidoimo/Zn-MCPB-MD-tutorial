@@ -1,0 +1,9 @@
+Minimization 1: solvent + ions, solute heavy atoms restrained (10)
+ &cntrl
+  imin=1, maxcyc=5000, ncyc=2500,
+  ntb=1, cut=10.0, lj1264=1,
+  ntr=1, restraint_wt=10.0, restraintmask='!(:WAT,Na+,Cl-) & !@H=',
+  nmropt=1, ntpr=250,
+ /
+ &wt type='END' /
+DISANG=../input/site_eq.rst
