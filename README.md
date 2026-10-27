@@ -1,6 +1,7 @@
 # Zn-MCPB-MD: bonded Zn sites with MCPB.py, ORCA and GaMD
+© cidoimo - Davide Pietrafesa 
 
-Pipeline and tutorial for the MD of Zn proteins from *Pseudomonas aeruginosa* (Zur regulon), worked out on **PA5535** (ZigA-like COG0523 GTPase, closed state with Mg·GTP):
+Pipeline and tutorial for the MD of Zn proteins from *Pseudomonas aeruginosa* (Zur regulon), worked out on **PA5535** (ZigA-like COG0523 GTPase, closed state with Mg·GTP), on Plutone server (University of Rome Tor Vergata):
 
 - **Zn²⁺** at the CxCC motif (Cys71, Cys73, Cys74) + one water → **bonded model** (MCPB.py)
 - QM with **ORCA** (geometry, Hessian) and **PySCF** (Merz–Kollman ESP) → no Gaussian needed
