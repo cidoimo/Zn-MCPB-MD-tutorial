@@ -46,7 +46,7 @@ Everything protein-specific is in **`config.sh`**: the same scripts are meant to
 
 ### 1.1 Shared software on plutone
 
-The conda env (`pyscf`: python 3.11, pyscf, parmed, openmpi 4.1.8) and ORCA 6.1.1 are Dave's installs, shared read-only. `config.sh` already points to them:
+The conda env (`pyscf`: python 3.11, pyscf, parmed, openmpi 4.1.8) and ORCA 6.1.1 are mine's installs, shared read-only. `config.sh` already points to them:
 ```bash
 QM_PYTHON=/home/dave/programs/miniconda3/envs/pyscf/bin/python
 ORCA_DIR=/home/dave/programs/orca6
@@ -56,7 +56,7 @@ Nothing to install or activate. Check once:
 /home/dave/programs/miniconda3/envs/pyscf/bin/python -c "import pyscf, parmed; print('ok')"
 ls /home/dave/programs/orca6/orca
 ```
-If one of them fails, ask Dave (permissions). Never `conda install` into that env from your account.
+If one of them fails, ask me (permissions). Never `conda install` into that env from your account.
 
 The scripts call that python directly with `PYTHONPATH` unset (so it never mixes with Amber's python 3.12 packages) and put its `bin` in `PATH` only for ORCA (`mpirun` 4.1.8). `envs/md-qm.yml` describes the same env, as a backup for another machine.
 
